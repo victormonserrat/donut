@@ -14,6 +14,7 @@
         "symfony/yaml": "4.3.*"
     },
     "require-dev": {
+        "phpspec/phpspec": "^5.1",
         "sylius-labs/coding-standard": "^3.0",
         "symfony/debug-pack": "^1.0",
         "symfony/maker-bundle": "^1.12",
@@ -48,13 +49,17 @@
             "cache:clear": "symfony-cmd",
             "assets:install %PUBLIC_DIR%": "symfony-cmd"
         },
-        "cs:check": "vendor/bin/ecs check src --ansi",
-        "cs:fix": "vendor/bin/ecs check src --fix --ansi",
+        "cs:check": "vendor/bin/ecs check src spec --ansi",
+        "cs:fix": "vendor/bin/ecs check src spec --fix --ansi",
         "post-install-cmd": [
             "@auto-scripts"
         ],
         "post-update-cmd": [
             "@auto-scripts"
+        ],
+        "spec": "vendor/bin/phpspec run --ansi",
+        "test": [
+            "@spec"
         ]
     },
     "conflict": {

@@ -1,0 +1,6 @@
+formatter.name: pretty
+
+suites:
+    default:
+        namespace: Donut
+        psr4_prefix: Donut
