@@ -14,6 +14,7 @@
         "symfony/yaml": "4.3.*"
     },
     "require-dev": {
+        "sylius-labs/coding-standard": "^3.0",
         "symfony/debug-pack": "^1.0",
         "symfony/maker-bundle": "^1.12",
         "symfony/web-server-bundle": "4.3.*"
@@ -47,6 +48,8 @@
             "cache:clear": "symfony-cmd",
             "assets:install %PUBLIC_DIR%": "symfony-cmd"
         },
+        "cs:check": "vendor/bin/ecs check src --ansi",
+        "cs:fix": "vendor/bin/ecs check src --fix --ansi",
         "post-install-cmd": [
             "@auto-scripts"
         ],
