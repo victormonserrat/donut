@@ -1,0 +1,16 @@
+default:
+    suites:
+        application:
+            contexts: []
+            filters:
+                tags: '@application'
+        infrastructure:
+            contexts: []
+            filters:
+                tags: '@infrastructure'
+
+    extensions:
+        FriendsOfBehat\SymfonyExtension:
+            kernel:
+                path: 'src/Infrastructure/Kernel.php'
+                class: 'Donut\Infrastructure\Kernel'

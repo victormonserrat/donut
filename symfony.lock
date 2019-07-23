@@ -1,9 +1,21 @@
 {
+    "behat/behat": {
+        "version": "v3.5.0"
+    },
+    "behat/gherkin": {
+        "version": "v4.6.0"
+    },
+    "behat/transliterator": {
+        "version": "v1.2.0"
+    },
     "composer/semver": {
         "version": "1.5.0"
     },
     "composer/xdebug-handler": {
         "version": "1.3.3"
+    },
+    "container-interop/container-interop": {
+        "version": "1.2.0"
     },
     "doctrine/annotations": {
         "version": "1.0",
@@ -36,6 +48,21 @@
         },
         "files": [
             "config/packages/dev/easy_log_handler.yaml"
+        ]
+    },
+    "friends-of-behat/symfony-extension": {
+        "version": "2.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "2.0",
+            "ref": "78a2c7ae7f228ada6645d58e57cf919b180b7827"
+        },
+        "files": [
+            "behat.yml.dist",
+            "config/services_test.yaml",
+            "features/demo.feature",
+            "tests/Behat/DemoContext.php"
         ]
     },
     "friendsofphp/php-cs-fixer": {
@@ -79,6 +106,9 @@
     },
     "ocramius/package-versions": {
         "version": "1.4.0"
+    },
+    "ocramius/proxy-manager": {
+        "version": "2.2.2"
     },
     "php-cs-fixer/diff": {
         "version": "v1.3.0"
@@ -154,6 +184,9 @@
     },
     "symfony/cache-contracts": {
         "version": "v1.1.5"
+    },
+    "symfony/class-loader": {
+        "version": "v3.4.29"
     },
     "symfony/config": {
         "version": "v4.3.2"
@@ -294,6 +327,9 @@
     "symfony/profiler-pack": {
         "version": "v1.0.4"
     },
+    "symfony/proxy-manager-bridge": {
+        "version": "v4.3.2"
+    },
     "symfony/routing": {
         "version": "4.2",
         "recipe": {
@@ -397,5 +433,11 @@
     },
     "webmozart/assert": {
         "version": "1.4.0"
+    },
+    "zendframework/zend-code": {
+        "version": "3.3.1"
+    },
+    "zendframework/zend-eventmanager": {
+        "version": "3.2.1"
     }
 }
