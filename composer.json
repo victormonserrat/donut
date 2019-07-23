@@ -2,7 +2,7 @@
     "name": "victormonserrat/donut",
     "type": "project",
     "description": "A to do (not) list example DDD application.",
-    "license": "proprietary",
+    "license": "MIT",
     "require": {
         "php": "^7.1.3",
         "ext-ctype": "*",
