@@ -17,6 +17,7 @@
     "require-dev": {
         "behat/behat": "^3.5",
         "friends-of-behat/symfony-extension": "^2.0",
+        "fzaninotto/faker": "^1.8",
         "phpspec/phpspec": "^5.1",
         "sylius-labs/coding-standard": "^3.0",
         "symfony/debug-pack": "^1.0",
