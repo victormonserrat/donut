@@ -1,4 +1,7 @@
 {
+    "beberlei/assert": {
+        "version": "v3.2.1"
+    },
     "behat/behat": {
         "version": "v3.5.0"
     },
@@ -89,6 +92,9 @@
     "jean85/pretty-package-versions": {
         "version": "1.2"
     },
+    "marc-mabe/php-enum": {
+        "version": "v4.1.0"
+    },
     "monolog/monolog": {
         "version": "1.24.0"
     },
@@ -136,6 +142,15 @@
     },
     "phpstan/phpdoc-parser": {
         "version": "0.3.5"
+    },
+    "prooph/common": {
+        "version": "v4.3.0"
+    },
+    "prooph/event-sourcing": {
+        "version": "v5.6.0"
+    },
+    "prooph/event-store": {
+        "version": "v7.5.4"
     },
     "psr/cache": {
         "version": "1.0.1"
