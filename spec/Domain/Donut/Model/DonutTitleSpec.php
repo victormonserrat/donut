@@ -15,19 +15,19 @@ namespace spec\Donut\Domain\Donut\Model;
 
 use Donut\Domain\Common\Model\ValueObject;
 use Donut\Domain\Donut\Exception\NotValidDonutTitle;
-use Donut\Tests\Spec\Fixtures\DonutTitle;
+use Donut\Tests\Spec\Fixtures\Donut;
 use PhpSpec\ObjectBehavior;
 
 final class DonutTitleSpec extends ObjectBehavior
 {
     public function it_is_a_value_object(): void
     {
-        $this->shouldImplement(ValueObject::class);
+        $this->shouldHaveType(ValueObject::class);
     }
 
     public function it_can_be_created_from_string(): void
     {
-        $title = DonutTitle::string();
+        $title = (string) Donut::title();
         $this->beConstructedThrough('fromString', [
             $title,
         ]);

@@ -13,11 +13,10 @@ declare(strict_types=1);
 
 namespace Donut\Domain\Donut\Model;
 
-use Donut\Domain\Common\Model\AbstractValueObject;
 use Donut\Domain\Common\Model\ValueObject;
 use Donut\Domain\Donut\Exception\NotValidDonutTitle;
 
-final class DonutTitle extends AbstractValueObject implements ValueObject
+final class DonutTitle extends ValueObject
 {
     public static function fromString(string $title): self
     {

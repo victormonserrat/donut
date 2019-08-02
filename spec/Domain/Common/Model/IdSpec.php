@@ -15,19 +15,19 @@ namespace spec\Donut\Domain\Common\Model;
 
 use Donut\Domain\Common\Exception\NotValidId;
 use Donut\Domain\Common\Model\ValueObject;
-use Donut\Tests\Spec\Fixtures\Id;
 use PhpSpec\ObjectBehavior;
+use Ramsey\Uuid\Uuid;
 
 final class IdSpec extends ObjectBehavior
 {
     public function it_is_a_value_object(): void
     {
-        $this->shouldImplement(ValueObject::class);
+        $this->shouldHaveType(ValueObject::class);
     }
 
     public function it_can_be_created_from_uuid_string(): void
     {
-        $uuid = Id::string();
+        $uuid = (string) Uuid::uuid4();
         $this->beConstructedThrough('fromUuidString', [
             $uuid,
         ]);

@@ -13,10 +13,23 @@ declare(strict_types=1);
 
 namespace Donut\Domain\Common\Model;
 
-interface ValueObject
+class ValueObject
 {
-    /** @return mixed */
-    public function value();
+    /** @var mixed */
+    protected $value;
 
-    public function isEqualTo(self $valueObject): bool;
+    final public function isEqualTo(self $valueObject): bool
+    {
+        return get_class($valueObject) === get_class($this) && $valueObject->value() === $this->value();
+    }
+
+    /** @return mixed */
+    final public function value()
+    {
+        return $this->value;
+    }
+
+    final protected function __construct()
+    {
+    }
 }
