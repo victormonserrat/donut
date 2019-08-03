@@ -26,11 +26,11 @@ final class AddDonut
 
     public static function with(Id $id, DonutTitle $title): self
     {
-        $addDonut = new self();
-        $addDonut->id = $id;
-        $addDonut->title = $title;
+        $command = new self();
+        $command->id = $id;
+        $command->title = $title;
 
-        return $addDonut;
+        return $command;
     }
 
     public function id(): Id

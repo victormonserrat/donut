@@ -11,7 +11,7 @@
 
 declare(strict_types=1);
 
-namespace Donut\Domain\Donut\Exception;
+namespace Donut\Application\Exception;
 
 use DomainException;
 use Donut\Domain\Common\Model\Id;

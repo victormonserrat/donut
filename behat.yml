@@ -1,7 +1,11 @@
 default:
     suites:
         application:
-            contexts: []
+            contexts:
+                - Donut\Tests\Behat\Context\Donut\ApplicationContext
+                - Donut\Tests\Behat\Context\Donut\HookContext
+                - Donut\Tests\Behat\Context\Donut\SetupContext
+                - Donut\Tests\Behat\Context\Donut\TransformContext
             filters:
                 tags: '@application'
         infrastructure:

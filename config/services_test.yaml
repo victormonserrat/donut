@@ -3,5 +3,8 @@ services:
         autowire: true
         autoconfigure: true
 
+    Donut\Domain\Donut\Repository\Donuts:
+        alias: 'Donut\Tests\Behat\Repository\InMemoryDonuts'
+
     Donut\Tests\Behat\:
         resource: '../tests/Behat'

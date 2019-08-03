@@ -14,7 +14,6 @@ declare(strict_types=1);
 namespace Donut\Domain\Donut\Repository;
 
 use Donut\Domain\Common\Model\Id;
-use Donut\Domain\Donut\Exception\NotAddedDonut;
 use Donut\Domain\Donut\Exception\NotFoundDonut;
 use Donut\Domain\Donut\Model\Donut;
 
@@ -25,6 +24,7 @@ interface Donuts
     /** @throws NotFoundDonut */
     public function withId(Id $id): Donut;
 
-    /** @throws NotAddedDonut */
     public function add(Donut $donut): void;
+
+    public function removeAll(): void;
 }
