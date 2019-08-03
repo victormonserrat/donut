@@ -13,9 +13,22 @@ declare(strict_types=1);
 
 namespace Donut\Domain\Common\Model;
 
-interface Entity
+class Entity
 {
-    public function id(): Id;
+    /** @var Id */
+    protected $id;
 
-    public function isTheSameAs(self $entity): bool;
+    final public function isTheSameAs(self $entity): bool
+    {
+        return get_class($entity) === get_class($this) && $entity->id()->isEqualTo($this->id());
+    }
+
+    final public function id(): Id
+    {
+        return $this->id;
+    }
+
+    final protected function __construct()
+    {
+    }
 }

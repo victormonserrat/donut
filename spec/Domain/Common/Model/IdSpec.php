@@ -22,12 +22,12 @@ final class IdSpec extends ObjectBehavior
 {
     public function it_is_a_value_object(): void
     {
-        $this->shouldImplement(ValueObject::class);
+        $this->shouldHaveType(ValueObject::class);
     }
 
     public function it_can_be_created_from_uuid_string(): void
     {
-        $uuid = Uuid::uuid4()->toString();
+        $uuid = (string) Uuid::uuid4();
         $this->beConstructedThrough('fromUuidString', [
             $uuid,
         ]);

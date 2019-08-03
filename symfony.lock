@@ -1,4 +1,7 @@
 {
+    "beberlei/assert": {
+        "version": "v3.2.1"
+    },
     "behat/behat": {
         "version": "v3.5.0"
     },
@@ -77,6 +80,9 @@
             ".php_cs.dist"
         ]
     },
+    "fzaninotto/faker": {
+        "version": "v1.8.0"
+    },
     "illuminate/contracts": {
         "version": "v5.8.29"
     },
@@ -85,6 +91,9 @@
     },
     "jean85/pretty-package-versions": {
         "version": "1.2"
+    },
+    "marc-mabe/php-enum": {
+        "version": "v4.1.0"
     },
     "monolog/monolog": {
         "version": "1.24.0"
@@ -133,6 +142,15 @@
     },
     "phpstan/phpdoc-parser": {
         "version": "0.3.5"
+    },
+    "prooph/common": {
+        "version": "v4.3.0"
+    },
+    "prooph/event-sourcing": {
+        "version": "v5.6.0"
+    },
+    "prooph/event-store": {
+        "version": "v7.5.4"
     },
     "psr/cache": {
         "version": "1.0.1"
@@ -288,6 +306,18 @@
             "version": "1.0",
             "ref": "fadbfe33303a76e25cb63401050439aa9b1a9c7f"
         }
+    },
+    "symfony/messenger": {
+        "version": "4.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "4.3",
+            "ref": "29716c100e8aef803ad72670deb3dc09bb052a64"
+        },
+        "files": [
+            "config/packages/messenger.yaml"
+        ]
     },
     "symfony/mime": {
         "version": "v4.3.2"

@@ -16,7 +16,7 @@ namespace Donut\Domain\Common\Model;
 use Donut\Domain\Common\Exception\NotValidId;
 use Ramsey\Uuid\Uuid;
 
-final class Id extends AbstractValueObject implements ValueObject
+final class Id extends ValueObject
 {
     public static function fromUuidString(string $uuid): self
     {
